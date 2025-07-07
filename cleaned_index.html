@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charity: Water Landing Page</title>
+  <!-- Link to the CSS file for styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Use Proxima Nova font if available, otherwise use a similar sans-serif font -->
+  <style>
+    body {
+      font-family: 'Proxima Nova', Arial, Helvetica, sans-serif;
+      font-size: 12px; /* Make all text a little bigger */
+      background-color: #fff; /* Set default background to white */
+    }
+    .main-content-bg {
+      background-color: #77A8BB; /* Set background color for main content */
+      margin-top: 17px;
+      padding-top: 1px;
+      min-height: 280px; /* Decrease the height of the blue background */
+    }
+    h1 {
+      font-size: 22px; /* Make heading a little bigger */
+    }
+    p {
+      font-size: 8px; /* Make paragraph text even smaller */
+      margin-top: 4px; /* Decrease space above paragraph */
+    }
+    button, input {
+      font-size: 12px; /* Keep button and input text a little bigger */
+    }
+    /* Make the input box longer */
+    input[type="text"] {
+      width: 220px;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main container for the page content -->
+  <div class="container">
+    <!-- Logo/Header section -->
+    <header class="logo">
+      <!-- Logo image from local folder -->
+      <img src="img/cw_logo-2.png" alt="charity: water logo" style="width: 150px; height: auto;">
+    </header>
+
+    <!-- Main content area -->
+    <div class="main-content main-content-bg">
+      <!-- Heading and image side by side -->
+      <div style="display: flex; align-items: flex-start; justify-content: flex-start;">
+        <div class="text-area" style="flex: 1; max-width: 50%;">
+          <h1 style="margin-bottom:2px; white-space:nowrap;">Give 100%.</h1>
+          <h1 style="margin-top:2px; white-space:nowrap;">See 100%.</h1>
+          <p style="white-space:nowrap;">Every dollar brings clean water<br>and we show you exactly where it goes.</p>
+          <!-- Simple subscribe form -->
+          <form class="subscribe-form">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <!-- Image next to heading, smaller size -->
+        <div class="image-area" style="margin-left: 2px; position: absolute; right: 5px; top: 50%; transform: translateY(-50%);">
+          <img src="img/Charity Water.jpg" alt="Water collection scene" style="width: 150px; height: auto; border-radius: 8px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
